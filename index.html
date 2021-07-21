@@ -10,15 +10,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Popper JS  -->
+    <!-- Popper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
     <!-- https://github.com/jaysalvat/jquery.facedetection JavaScript -->
     <script src="jquery.facedetection.min.js"></script>  
-
     <style>
         canvas {
             width: 80%;
@@ -57,6 +55,22 @@
 <body>
 
 <div class="container-fluid">
+    <div class="sticky-top">
+        <button class="btn btn-primary" id="btnRotate" disabled>Rotate photo</button>
+        <button class="btn btn-primary" id="btnFlip" disabled>Flip selfie</button>
+
+        <button class="btn btn-primary" id="btnClearrect" disabled>Clear</button>
+        <button class="btn btn-primary" id="btnReady" disabled>Ready</button>
+        <button class="btn btn-primary" id="btnCrop" disabled>Crop</button>
+        <button class="btn btn-primary" id="btnSave" disabled>Save photo</button>
+        <button class="btn btn-secondary" id="btnLeft" disabled>Left</button>
+        <button class="btn btn-secondary" id="btnRight" disabled>Right</button>
+        <button class="btn btn-secondary" id="btnUp" disabled>Up</button>
+        <button class="btn btn-secondary" id="btnDown" disabled>Down</button>
+        <button class="btn btn-secondary" id="btnBig" disabled>Bigger</button>
+        <button class="btn btn-secondary" id="btnSmall" disabled>Smaller</button>
+    </div>
+    
     <p id="hints" class="mb-1 lead">ERROR: Your browser does not support this application.  Please try it with another browser.</p>
     <div class="input-group my-0">
         <input id="fileTocrop" type="file" class="form-control"  aria-describedby="basic-addon2">
@@ -83,21 +97,7 @@
         </div>
     </div>
 
-    <div class="fixed-bottom">
-        <button class="btn btn-primary" id="btnRotate" disabled>Rotate photo</button>
-        <button class="btn btn-primary" id="btnFlip" disabled>Flip selfie</button>
 
-        <button class="btn btn-primary" id="btnClearrect" disabled>Clear</button>
-        <button class="btn btn-primary" id="btnReady" disabled>Ready</button>
-        <button class="btn btn-primary" id="btnCrop" disabled>Crop</button>
-        <button class="btn btn-primary" id="btnSave" disabled>Save photo</button>
-        <button class="btn btn-secondary" id="btnLeft" disabled>Left</button>
-        <button class="btn btn-secondary" id="btnRight" disabled>Right</button>
-        <button class="btn btn-secondary" id="btnUp" disabled>Up</button>
-        <button class="btn btn-secondary" id="btnDown" disabled>Down</button>
-        <button class="btn btn-secondary" id="btnBig" disabled>Bigger</button>
-        <button class="btn btn-secondary" id="btnSmall" disabled>Smaller</button>
-    </div>
 </div>
 <!--Copyright (C) 2018 Puah Hock Leng - All Rights Reserved
     Puah_Hock_Leng&#64;ite&#46;edu&#46;sg  -->
